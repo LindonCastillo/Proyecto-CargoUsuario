@@ -82,22 +82,22 @@ namespace RegistroCompleto.UI.Registros
 
         private void Buscar_button_Click(object sender, EventArgs e)
         {
-            int id;
-            Usuarios Usuario = new Usuarios();
-            int.TryParse(UsuarioId_numericUpDown.Text, out id);
+            Usuarios Usuario;
+            int id =Convert.ToInt32(UsuarioId_numericUpDown.Value);
 
             Limpiar();
-
             Usuario = UsuariosBLL.Buscar(id);
 
-            if(Usuario != null)
+            if (Usuario != null)
             {
-                MessageBox.Show("Persona Encontrada");
                 LlenaCampo(Usuario);
+                MessageBox.Show("Persona Encontrada"); 
+                
             }
             else
             {
-                MessageBox.Show("Persona no Encontrada");
+                MessageBox.Show("Persona No Encontrada");
+
             }
 
         }
@@ -149,23 +149,27 @@ namespace RegistroCompleto.UI.Registros
 
             if(Nombre_textBox.Text == string.Empty)
             {
+                MessageBox.Show("No Puede dejar el campo Nombre vacio", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 paso = false;
             }
 
-            if (Email_textBox.Text == string.Empty)
+            if (string.IsNullOrWhiteSpace(Email_textBox.Text))
             {
+                MessageBox.Show("No Puede dejar el campo E-Mail vacio", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 paso = false;
             }
 
 
             if (Usuario_textBox.Text == string.Empty)
             {
+                MessageBox.Show("No Puede dejar el campo Usuario vacio", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 paso = false;
             }
 
 
-            if (Clave_textBox.Text == string.Empty)
+            if (string.IsNullOrWhiteSpace(Clave_textBox.Text))
             {
+                MessageBox.Show("No Puede dejar el campo Clave vacio", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 paso = false;
             }
    

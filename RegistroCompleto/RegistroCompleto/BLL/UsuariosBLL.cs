@@ -80,11 +80,11 @@ namespace RegistroCompleto.BLL
         public static Usuarios Buscar(int id)
         {
             Contexto db = new Contexto();
-            Usuarios Usuarios = new Usuarios();
+            Usuarios Usuario;
 
             try
             {
-                Usuarios usuarios = db.Usuario.Find(id);
+                Usuario = db.Usuario.Find(id);
             }
             catch(Exception)
             {
@@ -95,9 +95,9 @@ namespace RegistroCompleto.BLL
                 db.Dispose();
             }
 
-            return Usuarios;
+            return Usuario;
         }
-        //to do: HACER EL GETLIST
+       
         public static List<Usuarios> GetList(Expression<Func<Usuarios, bool>> Usuario)
         {
             List<Usuarios> Lista = new List<Usuarios>();
