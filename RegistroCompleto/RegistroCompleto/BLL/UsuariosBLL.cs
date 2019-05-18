@@ -33,14 +33,14 @@ namespace RegistroCompleto.BLL
             return paso;
         }
 
-        public static bool Modificar(Usuarios usuario)
+        public static bool Modificar(Usuarios Usuario)
         {
             bool paso = false;
             Contexto db = new Contexto();
 
             try
             {
-                db.Entry(usuario).State = EntityState.Modified;
+                db.Entry(Usuario).State = EntityState.Modified;
                 paso = (db.SaveChanges() > 0);
 
             }
