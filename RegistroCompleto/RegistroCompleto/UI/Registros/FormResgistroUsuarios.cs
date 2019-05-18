@@ -36,7 +36,6 @@ namespace RegistroCompleto.UI.Registros
             }
 
             Usuario = LlenaClase();
-            Limpiar();
 
             if(UsuarioId_numericUpDown.Value == 0)
             {
@@ -53,7 +52,11 @@ namespace RegistroCompleto.UI.Registros
             }
 
             if (paso)
+            {
+                Limpiar();
                 MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
             else
                 MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
