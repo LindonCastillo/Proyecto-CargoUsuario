@@ -2,7 +2,7 @@
 
 namespace RegistroCompleto.UI.Registros
 {
-    partial class FormResgistroUsuarios
+    partial class rUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace RegistroCompleto.UI.Registros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormResgistroUsuarios));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rUsuarios));
             this.Nombre_textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();

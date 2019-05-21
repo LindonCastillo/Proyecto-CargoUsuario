@@ -4,7 +4,7 @@ go
 use RegistroCompleto
 go
 
-create table Usuario
+create table Usuarios
 (
 UsuarioId int primary key identity, 
 Nombres varchar(50), 

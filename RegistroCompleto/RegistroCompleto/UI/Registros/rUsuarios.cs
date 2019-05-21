@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace RegistroCompleto.UI.Registros
 {
-    public partial class FormResgistroUsuarios : Form
+    public partial class rUsuarios : Form
     {
-        public FormResgistroUsuarios()
+        public rUsuarios()
         {
             InitializeComponent();
         }
