@@ -53,6 +53,11 @@
             // CargoId_numericUpDown
             // 
             this.CargoId_numericUpDown.Location = new System.Drawing.Point(122, 43);
+            this.CargoId_numericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.CargoId_numericUpDown.Name = "CargoId_numericUpDown";
             this.CargoId_numericUpDown.Size = new System.Drawing.Size(187, 20);
             this.CargoId_numericUpDown.TabIndex = 1;

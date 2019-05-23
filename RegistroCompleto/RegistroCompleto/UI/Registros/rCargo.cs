@@ -87,10 +87,10 @@ namespace RegistroCompleto.UI.Registros
             if (Cargo != null)
             {
                 LlenaCampo(Cargo);
-                MessageBox.Show("Persona Encontrada");
+                MessageBox.Show("Cargo Encontrado");
             }
             else
-                MessageBox.Show("Persona No Encontrada");
+                MessageBox.Show("Cargo No Encontrado");
 
         }
 
