@@ -13,8 +13,8 @@ namespace RegistroCompleto.Entidades
     public class Cargos
     {
         [Key]
-        int CargoId { get; set; }
-        string Descripcion { get; set; }
+        public int CargoId { get; set; }
+        public string Descripcion { get; set; }
 
         public Cargos()
         {

@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rCargo));
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CargoId_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.Descripcion_textBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Eliminar_button = new System.Windows.Forms.Button();
             this.Guardar_button = new System.Windows.Forms.Button();
             this.Nuevo_button = new System.Windows.Forms.Button();
             this.Buscar_button = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CargoId_numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -50,19 +50,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CargoId";
             // 
-            // numericUpDown1
+            // CargoId_numericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(122, 43);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(187, 20);
-            this.numericUpDown1.TabIndex = 1;
+            this.CargoId_numericUpDown.Location = new System.Drawing.Point(122, 43);
+            this.CargoId_numericUpDown.Name = "CargoId_numericUpDown";
+            this.CargoId_numericUpDown.Size = new System.Drawing.Size(187, 20);
+            this.CargoId_numericUpDown.TabIndex = 1;
             // 
-            // textBox1
+            // Descripcion_textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(122, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 20);
-            this.textBox1.TabIndex = 2;
+            this.Descripcion_textBox.Location = new System.Drawing.Point(122, 84);
+            this.Descripcion_textBox.Name = "Descripcion_textBox";
+            this.Descripcion_textBox.Size = new System.Drawing.Size(289, 20);
+            this.Descripcion_textBox.TabIndex = 2;
             // 
             // label2
             // 
@@ -140,13 +140,13 @@
             this.Controls.Add(this.Nuevo_button);
             this.Controls.Add(this.Buscar_button);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.Descripcion_textBox);
+            this.Controls.Add(this.CargoId_numericUpDown);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "rCargo";
             this.Text = "Registro de Cargos";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CargoId_numericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,8 +155,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.NumericUpDown CargoId_numericUpDown;
+        private System.Windows.Forms.TextBox Descripcion_textBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Buscar_button;
         private System.Windows.Forms.Button Eliminar_button;
