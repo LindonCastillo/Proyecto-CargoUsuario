@@ -25,9 +25,16 @@ namespace RegistroCompleto
 
         private void UsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            rUsuarios formResgistroUsuarios = new rUsuarios();
-            formResgistroUsuarios.MdiParent = this;
-            formResgistroUsuarios.Show();
+            rUsuarios formRegistroUsuarios = new rUsuarios();
+            formRegistroUsuarios.MdiParent = this;
+            formRegistroUsuarios.Show();
+        }
+
+        private void CargoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rCargo formRegistroCargos = new rCargo();
+            formRegistroCargos.MdiParent = this;
+            formRegistroCargos.Show();
         }
     }
 }
