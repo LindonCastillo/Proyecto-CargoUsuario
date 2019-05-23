@@ -1,7 +1,7 @@
-create database RegistroCompleto
+create database RegistroCompleto_db
 go
 
-use RegistroCompleto
+use RegistroCompleto_db
 go
 
 create table Usuarios
@@ -14,3 +14,7 @@ Usuario varchar(50),
 Clave varchar (50), 
 FechaIngreso datetime
 )
+
+delete from Usuarios where x
+
+select * from Usuarios

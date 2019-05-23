@@ -111,9 +111,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\Scripts\Script.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\application_add-512 icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +124,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icono.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DAL\Scripts\Script.sql" />
+    <None Include="Resources\preview_search_find_locate_1551.ico" />
+    <None Include="Resources\document_delete_icono.ico" />
+    <None Include="Resources\document_add_256_icon-icons.com_75994.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
