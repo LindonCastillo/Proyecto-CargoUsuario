@@ -10,13 +10,13 @@ namespace RegistroCompleto.Entidades
 {
 
 
-    public class Cargo
+    public class Cargos
     {
         [Key]
         int CargoId { get; set; }
         string Descripcion { get; set; }
 
-        public Cargo()
+        public Cargos()
         {
             CargoId = 0;
             Descripcion = string.Empty;

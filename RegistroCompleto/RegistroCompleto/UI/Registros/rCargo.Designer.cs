@@ -33,10 +33,10 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.Eliminar_button = new System.Windows.Forms.Button();
             this.Guardar_button = new System.Windows.Forms.Button();
             this.Nuevo_button = new System.Windows.Forms.Button();
+            this.Buscar_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,19 +74,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Descripción";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::RegistroCompleto.Properties.Resources.preview_search_find_locate_1551;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(317, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 39);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Buscar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Eliminar_button
             // 
             this.Eliminar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,6 +86,7 @@
             this.Eliminar_button.Text = "Eliminar";
             this.Eliminar_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Eliminar_button.UseVisualStyleBackColor = true;
+            this.Eliminar_button.Click += new System.EventHandler(this.Eliminar_button_Click);
             // 
             // Guardar_button
             // 
@@ -112,6 +100,7 @@
             this.Guardar_button.Text = "Guardar";
             this.Guardar_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Guardar_button.UseVisualStyleBackColor = true;
+            this.Guardar_button.Click += new System.EventHandler(this.Guardar_button_Click);
             // 
             // Nuevo_button
             // 
@@ -125,6 +114,21 @@
             this.Nuevo_button.Text = "Nuevo";
             this.Nuevo_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Nuevo_button.UseVisualStyleBackColor = true;
+            this.Nuevo_button.Click += new System.EventHandler(this.Nuevo_button_Click);
+            // 
+            // Buscar_button
+            // 
+            this.Buscar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar_button.Image = global::RegistroCompleto.Properties.Resources.preview_search_find_locate_1551;
+            this.Buscar_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buscar_button.Location = new System.Drawing.Point(317, 24);
+            this.Buscar_button.Name = "Buscar_button";
+            this.Buscar_button.Size = new System.Drawing.Size(94, 39);
+            this.Buscar_button.TabIndex = 4;
+            this.Buscar_button.Text = "Buscar";
+            this.Buscar_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Buscar_button.UseVisualStyleBackColor = true;
+            this.Buscar_button.Click += new System.EventHandler(this.Buscar_button_Click);
             // 
             // rCargo
             // 
@@ -134,7 +138,7 @@
             this.Controls.Add(this.Eliminar_button);
             this.Controls.Add(this.Guardar_button);
             this.Controls.Add(this.Nuevo_button);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Buscar_button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.numericUpDown1);
@@ -154,7 +158,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Buscar_button;
         private System.Windows.Forms.Button Eliminar_button;
         private System.Windows.Forms.Button Guardar_button;
         private System.Windows.Forms.Button Nuevo_button;

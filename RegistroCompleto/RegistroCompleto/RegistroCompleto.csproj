@@ -53,9 +53,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\CargosBLL.cs" />
     <Compile Include="BLL\UsuariosBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\Cargo.cs" />
+    <Compile Include="Entidades\Cargos.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -65,6 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\rCargo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,14 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UI\Registros\rCargo.resx">
       <DependentUpon>rCargo.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,25 +112,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\application_add-512 icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Save_black-512 icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\35972.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icono.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="DAL\Scripts\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\preview_search_find_locate_1551.ico" />
+    <None Include="Resources\icono1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_add-512 icon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_black-512 icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview_search_find_locate_15511.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

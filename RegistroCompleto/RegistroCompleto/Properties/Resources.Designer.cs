@@ -63,16 +63,6 @@ namespace RegistroCompleto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _35972 {
-            get {
-                object obj = ResourceManager.GetObject("35972", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap application_add_512_icon {
             get {
                 object obj = ResourceManager.GetObject("application_add-512 icon", resourceCulture);
@@ -83,29 +73,19 @@ namespace RegistroCompleto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap application_add_512_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("application_add-512 icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_icon {
             get {
                 object obj = ResourceManager.GetObject("delete icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap document_add_256_icon_icons_com_75994 {
-            get {
-                object obj = ResourceManager.GetObject("document_add_256_icon-icons.com_75994", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap document_delete_icono {
-            get {
-                object obj = ResourceManager.GetObject("document_delete_icono", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

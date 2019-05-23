@@ -178,5 +178,6 @@ namespace RegistroCompleto.UI.Registros
    
             return paso;
         }
+
     }
 }

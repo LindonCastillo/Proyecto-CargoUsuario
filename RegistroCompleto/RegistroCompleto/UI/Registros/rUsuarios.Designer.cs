@@ -46,9 +46,9 @@ namespace RegistroCompleto.UI.Registros
             this.label7 = new System.Windows.Forms.Label();
             this.FechaIngreso_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Eliminar_button = new System.Windows.Forms.Button();
+            this.Buscar_button = new System.Windows.Forms.Button();
             this.Guardar_button = new System.Windows.Forms.Button();
             this.Nuevo_button = new System.Windows.Forms.Button();
-            this.Buscar_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.UsuarioId_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NivelUsuario_numericUpDown)).BeginInit();
             this.SuspendLayout();
@@ -198,6 +198,20 @@ namespace RegistroCompleto.UI.Registros
             this.Eliminar_button.UseVisualStyleBackColor = true;
             this.Eliminar_button.Click += new System.EventHandler(this.Eliminar_button_Click);
             // 
+            // Buscar_button
+            // 
+            this.Buscar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar_button.Image = global::RegistroCompleto.Properties.Resources.icono;
+            this.Buscar_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buscar_button.Location = new System.Drawing.Point(378, 19);
+            this.Buscar_button.Name = "Buscar_button";
+            this.Buscar_button.Size = new System.Drawing.Size(93, 38);
+            this.Buscar_button.TabIndex = 18;
+            this.Buscar_button.Text = "Buscar";
+            this.Buscar_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Buscar_button.UseVisualStyleBackColor = true;
+            this.Buscar_button.Click += new System.EventHandler(this.Buscar_button_Click);
+            // 
             // Guardar_button
             // 
             this.Guardar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,7 +229,7 @@ namespace RegistroCompleto.UI.Registros
             // Nuevo_button
             // 
             this.Nuevo_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nuevo_button.Image = global::RegistroCompleto.Properties.Resources.application_add_512_icon;
+            this.Nuevo_button.Image = global::RegistroCompleto.Properties.Resources.application_add_512_icon1;
             this.Nuevo_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Nuevo_button.Location = new System.Drawing.Point(69, 345);
             this.Nuevo_button.Name = "Nuevo_button";
@@ -226,21 +240,7 @@ namespace RegistroCompleto.UI.Registros
             this.Nuevo_button.UseVisualStyleBackColor = true;
             this.Nuevo_button.Click += new System.EventHandler(this.Nuevo_button_Click);
             // 
-            // Buscar_button
-            // 
-            this.Buscar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buscar_button.Image = global::RegistroCompleto.Properties.Resources.icono;
-            this.Buscar_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Buscar_button.Location = new System.Drawing.Point(378, 19);
-            this.Buscar_button.Name = "Buscar_button";
-            this.Buscar_button.Size = new System.Drawing.Size(79, 38);
-            this.Buscar_button.TabIndex = 18;
-            this.Buscar_button.Text = "Buscar";
-            this.Buscar_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Buscar_button.UseVisualStyleBackColor = true;
-            this.Buscar_button.Click += new System.EventHandler(this.Buscar_button_Click);
-            // 
-            // FormResgistroUsuarios
+            // rUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -264,7 +264,7 @@ namespace RegistroCompleto.UI.Registros
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Nombre_textBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormResgistroUsuarios";
+            this.Name = "rUsuarios";
             this.Text = "Resgistro de Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.UsuarioId_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NivelUsuario_numericUpDown)).EndInit();

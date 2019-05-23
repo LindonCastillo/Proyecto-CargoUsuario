@@ -1,26 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
 using RegistroCompleto.DAL;
 using RegistroCompleto.Entidades;
 using System.Linq.Expressions;
-using System.Data.Entity;
 
 namespace RegistroCompleto.BLL
 {
-    public class UsuariosBLL
+    class CargosBLL
     {
-        public static bool Guardar(Usuarios usuario)
+        public static bool Guardar(Cargos cargos)
         {
             bool paso = false;
             Contexto db = new Contexto();
 
             try
             {
-                if (db.Usuario.Add(usuario) != null)
+                if (db.Cargo.Add(cargos) != null)
                     paso = db.SaveChanges() > 0;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -31,18 +33,18 @@ namespace RegistroCompleto.BLL
             return paso;
         }
 
-        public static bool Modificar(Usuarios Usuario)
+        public static bool Modificar(Cargos Cargo)
         {
             bool paso = false;
             Contexto db = new Contexto();
 
             try
             {
-                db.Entry(Usuario).State = EntityState.Modified;
+                db.Entry(Cargo).State = EntityState.Modified;
                 paso = (db.SaveChanges() > 0);
 
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -59,12 +61,12 @@ namespace RegistroCompleto.BLL
             Contexto db = new Contexto();
             try
             {
-                var eliminar = db.Usuario.Find(id);
+                var eliminar = db.Cargo.Find(id);
                 db.Entry(eliminar).State = EntityState.Deleted;
 
                 paso = (db.SaveChanges() > 0);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -75,16 +77,16 @@ namespace RegistroCompleto.BLL
             return paso;
         }
 
-        public static Usuarios Buscar(int id)
+        public static Cargos Buscar(int id)
         {
             Contexto db = new Contexto();
-            Usuarios Usuario;
+            Cargos Cargo;
 
             try
             {
-                Usuario = db.Usuario.Find(id);
+                Cargo = db.Cargo.Find(id);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -93,16 +95,16 @@ namespace RegistroCompleto.BLL
                 db.Dispose();
             }
 
-            return Usuario;
+            return Cargo;
         }
-       
-        public static List<Usuarios> GetList(Expression<Func<Usuarios, bool>> Usuario)
+        
+        public static List<Cargos> GetList(Expression<Func<Cargos, bool>> Cargo)
         {
-            List<Usuarios> Lista = new List<Usuarios>();
+            List<Cargos> Lista = new List<Cargos>();
             Contexto db = new Contexto();
             try
             {
-                Lista = db.Usuario.Where(Usuario).ToList();
+                Lista = db.Cargo.Where(Cargo).ToList();
             }
             catch
             {
@@ -117,11 +119,3 @@ namespace RegistroCompleto.BLL
         }
     }
 }
-
-
-
-
-
-
-
-

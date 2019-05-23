@@ -16,5 +16,25 @@ namespace RegistroCompleto.UI.Registros
         {
             InitializeComponent();
         }
+
+        private void Nuevo_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Guardar_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Eliminar_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Buscar_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
